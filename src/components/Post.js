@@ -1,7 +1,7 @@
 import React from 'react'
 import { SortableElement } from 'react-sortable-hoc'
 
-const Post = SortableElement(({post, imgStyle}) =>{
+const SortablePost = React.memo(({post, imgStyle}) => {
   if(post.albumId === 2){
     return (
       <div>
@@ -18,5 +18,6 @@ const Post = SortableElement(({post, imgStyle}) =>{
         <h3>{post.title}</h3>
       </div>
     )
-  })
-export default Post
+  });
+
+export const Post = SortableElement(SortablePost); 
