@@ -1,7 +1,10 @@
 import React from 'react'
 import { SortableElement } from 'react-sortable-hoc'
 
+
 const SortablePost = React.memo(({post, imgStyle}) => {
+
+ 
   if(post.albumId === 2){
     return (
       <div>
