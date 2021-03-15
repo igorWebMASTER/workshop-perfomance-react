@@ -8,6 +8,10 @@ Principais Técnicas:
 
 - Memoization
 
+- UseCallback 
+
+- Otimização de renderizações condicionais de componentes
+
 ## Available Scripts
 
 In the project directory, you can run:
